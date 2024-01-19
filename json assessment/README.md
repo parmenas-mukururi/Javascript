@@ -1,0 +1,1 @@
+![alt text](https://github.com/parmenas-mukururi/Javascript/blob/json/json%20assessment/Screenshot%202024-01-19%20165648.png)
