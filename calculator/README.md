@@ -1,1 +1,1 @@
-![alt text]()
+![alt text](https://github.com/parmenas-mukururi/Javascript/blob/calculator/calculator/Screenshot%202024-01-19%20092544.png)git 
