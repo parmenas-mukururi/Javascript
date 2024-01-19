@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      main {
+        margin: auto;
+        padding: 10%;
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: whitesmoke;
+      }
+      #pr,
+      #qty {
+        width: 80%;
+      }
+      #result {
+        margin-top: 20px;
+        width: 100px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Calculator</h1>
+      <label for="price">Price</label>
+      <br />
+      <input type="number" name="price" id="pr" placeholder="Enter amount" />
+      <br />
+      <label for="quantity">Quantity</label>
+      <br />
+      <input type="number" name="quantity" id="qty" />
+      <br />
+      <input type="number" name="totalAmount" id="result" readonly />
+    </main>
+
+    <script>
+      const prInput = document.getElementById("pr");
+      const qtyInput = document.getElementById("qty");
+      const displayTotal = document.getElementById("result");
+      function calculateTotal() {
+        const pr = parseFloat(prInput.value);
+        const qty = parseFloat(qtyInput.value);
+
+        const total = pr * qty;
+        displayTotal.value = total;
+      }
+      prInput.addEventListener("input", calculateTotal);
+      qtyInput.addEventListener("input", calculateTotal);
+    </script>
+  </body>
+</html>
